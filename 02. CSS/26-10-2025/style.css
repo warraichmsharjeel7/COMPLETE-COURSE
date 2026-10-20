@@ -1,0 +1,48 @@
+.post > h1 {
+  /* color: red; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 150px; */
+  font-style: italic;
+  /* text-decoration: underline; */
+  /* text-align: center; */
+  color: orange;
+}
+
+.post > h1:hover {
+  text-shadow: 2px 2px 1px red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.post > p {
+  /* color: blue; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 500%; */
+  /* font-weight: 700; */
+  /* line-height: 50px; */
+  /* letter-spacing: 2px; */
+  /* word-spacing: 20px; */
+  text-indent: 40px;
+}
+
+.post > p::first-letter {
+  color: blue;
+  font-size: 30px;
+}
+.post > p::first-line {
+  color: red;
+}
+
+.post > span {
+  text-transform: capitalize;
+}
+
+.post > a {
+  text-decoration: none;
+}
+
+.post > input:focus {
+    background-color: greenyellow;
+    color: red;
+}

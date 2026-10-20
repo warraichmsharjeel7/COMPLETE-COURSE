@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Firebase Auth</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <!-- Left Side -->
+        <div class="auth-info">
+
+            <div class="brand">
+                <div class="brand-icon">F</div>
+                <span>Firebase Auth</span>
+            </div>
+
+            <div class="info-content">
+                <span class="badge">Firebase Authentication</span>
+
+                <h1>
+                    Build secure apps
+                    <span>with confidence.</span>
+                </h1>
+
+                <p>
+                    Simple, secure and powerful authentication
+                    for your modern web applications.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Secure Authentication</strong>
+                            <small>Protect your users and their data.</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <strong>Easy to Integrate</strong>
+                            <small>Connect Firebase with your app easily.</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">◆</div>
+                        <div>
+                            <strong>Ready for Production</strong>
+                            <small>Built for modern applications.</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Firebase Auth Demo
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="auth-form-container">
+
+            <div class="auth-form">
+
+                <div class="mobile-brand">
+                    <div class="brand-icon">F</div>
+                    <span>Firebase Auth</span>
+                </div>
+
+                <!-- Signup -->
+                <div id="loginForm">
+
+                    <div class="form-heading">
+                        <span class="welcome">WELCOME BACK</span>
+                        <h2>Create your Account</h2>
+                        <p>
+                            Enter your details to continue.
+                        </p>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="loginEmail">Email Address</label>
+
+                        <div class="input-wrapper">
+                            <span class="input-icon">✉</span>
+                            <input type="email" id="signupEmail" placeholder="you@example.com" />
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="loginPassword">Password</label>
+
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+
+                            <input type="password" id="signupPassword" placeholder="Enter your password" />
+
+                            <button type="button" class="password-toggle"
+                                onclick="togglePassword('loginPassword', this)">
+                                ◉
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="remember-row">
+
+                        <label class="checkbox-container">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-btn" id="signupBtn">
+                        Sign Up
+                        <span>→</span>
+                    </button>
+
+
+
+                    <div class="divider">
+                        <span>OR CONTINUE WITH</span>
+                    </div>
+
+
+                    <div class="social-buttons">
+
+                        <button type="button" class="social-btn">
+                            <span class="google-icon">G</span>
+                            Google
+                        </button>
+
+                        <button type="button" class="social-btn">
+                            <span>◆</span>
+                            GitHub
+                        </button>
+
+                    </div>
+
+
+                    <p class="switch-text">
+                        Already have an account? Please
+                        <button type="button">
+                            <a href="index.html">
+                                Login
+                            </a>
+                        </button>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+li {
+    list-style-position: outside;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    position: relative;
+}
+
+.box{
+    background-color: blue;
+    /* width: 200px; */
+    width: 25%;
+    height: 900px;
+    position: absolute;
+    /* left: 500px; */
+    /* top: 0px; */
+    /* right: -20px; */
+    /* bottom: 0px; */
+    /* z-index: 1; */
+}
+.box2{
+    background-color: red;
+    /* width: 300px; */
+    width: 75%;
+    height: 900px;
+    float: right;
+}
+
+
+.whatsapp {
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.wh{
+    /* max-width: 1300px; */
+    max-width: 100%;
+    background-color: red;
+    height: 200px;
+}
+
+.data {
+    background-color: green;
+    padding: 10px;
+}
+
+.para {
+ background-color: orange;
+ color: #fff;
+ max-width: 300px;
+ padding: 10px;
+border: 5px solid black;
+display: inline-block;
+}
+
+
+/* p{
+    font-family:sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration: underline;
+} */
+
+a{
+    text-decoration: none;
+}
+
+p{
+    /* line-height: 30px; */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 10px; */
+    text-indent: 100px;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 2px 2px #000;
+
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .calculator {
+        background: #1e1e2f;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        width: 320px;
+      }
+
+      .display {
+        background: #0f0f1a;
+        color: white;
+        font-size: 2.5rem;
+        text-align: right;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        min-height: 80px;
+        overflow: hidden;
+        box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 280px;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      button {
+        height: 65px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.1s;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      .number,
+      .decimal {
+        background: #2d2d44;
+        color: white;
+      }
+
+      .operator {
+        background: #ff9500;
+        color: white;
+        font-weight: bold;
+      }
+
+      .clear {
+        background: #ff3b5c;
+        color: white;
+      }
+
+      .equals {
+        background: #00d4a5;
+        color: white;
+        font-weight: bold;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      .zero {
+        grid-column: span 2;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <!-- <div class="display" id="display">0</div> -->
+       <input type="text" readonly class="display" id="displayValue">
+
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="clear" onclick="clearBtn()">AC</button>
+        <button onclick="deleteBtn()">Del</button>
+        <button onclick="operator('%')">%</button>
+        <button class="operator" onclick="operator('/')">/</button>
+
+        <!-- Row 2 -->
+        <button class="number" onclick="number(7)">7</button>
+        <button class="number" onclick="number(8)">8</button>
+        <button class="number" onclick="number(9)">9</button>
+        <button class="operator" onclick="operator('*')">*</button>
+
+        <!-- Row 3 -->
+        <button class="number" onclick="number(4)">4</button>
+        <button class="number" onclick="number(5)">5</button>
+        <button class="number" onclick="number(6)">6</button>
+        <button class="operator" onclick="operator('-')">−</button>
+
+        <!-- Row 4 -->
+        <button class="number" onclick="number(1)">1</button>
+        <button class="number" onclick="number(2)">2</button>
+        <button class="number" onclick="number(3)">3</button>
+        <button class="operator" onclick="operator('+')">+</button>
+
+        <!-- Row 5 -->
+        <button class="number zero" onclick="number(0)">0</button>
+        <button class="decimal" onclick="decimalPoint()">.</button>
+        <button class="equals" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

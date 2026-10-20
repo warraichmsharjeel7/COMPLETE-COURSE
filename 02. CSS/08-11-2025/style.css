@@ -1,0 +1,16 @@
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwY2FyfGVufDB8fDB8fHww&fm=jpg&q=60&w=300);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; */
+  background: #d46174;
+  background: linear-gradient(
+    296deg,
+    rgba(212, 97, 116, 1) 9%,
+    rgba(63, 214, 49, 1) 40%,
+    rgba(198, 230, 38, 0.99) 73%,
+    rgba(230, 170, 21, 1) 92%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}

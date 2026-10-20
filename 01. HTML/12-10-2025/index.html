@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Class: 12</h1>
+    <h4>Chapter: 07 - Forms</h4>
+
+    <p>
+      Anish Kapoor won the Turner Prize in 1991 and exhibited at the
+      <span class="gallery">Tate Modern</span> gal
+    </p>
+
+    <!-- <iframe
+      width="100%"
+      height="550"
+      src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed"
+    >
+    </iframe> -->
+    <!-- <video src="videos/smit-video.mp4" controls></video> -->
+    <audio src="videos/pop pulse ringtone (ringtones.com.co).mp3" controls></audio>
+
+    <form>
+      <select name="countries">
+        <option value="">Select country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Turkey">Turkey</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+      </select>
+      <select name="countries" multiple>
+        <option value="">Select country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Turkey" selected>Turkey</option>
+        <option value="China">China</option>
+        <option value="Japan" selected>Japan</option>
+      </select>
+      <br />
+      <br />
+      <input type="file" />
+      <br />
+      <input type="submit" value="Login" />
+      <br />
+      <button>Signup</button>
+      <!-- <form action="http://www.example.com/add.php">
+        <button>
+          <img src="images/add.gif" alt="add" width="10" height="10" /> Add
+        </button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+      </form> -->
+
+      <p>Gender</p>
+      <label for="male">
+        <input type="radio" name="gender" id="male" /> Male
+      </label>
+      <label for="female">
+        <input type="radio" name="gender" id="female" /> Female
+      </label>
+      <br />
+      <label for="user">
+        username:
+        <input type="text" id="user" />
+      </label>
+
+      <p>username</p>
+      <input type="text" required />
+      <p>password</p>
+      <input type="password" required />
+      <input type="submit" value="login" />
+
+      <br />
+      <br />
+    </form>
+
+    <fieldset>
+      <legend>Contact details</legend>
+      <label
+        >Email:<br />
+        <input type="text" name="email" /></label
+      ><br />
+      <label
+        >Mobile:<br />
+        <input type="text" name="mobile" /></label
+      ><br />
+      <label
+        >Telephone:<br />
+        <input type="text" name="telephone"
+      /></label>
+    </fieldset>
+
+    <input type="text" />
+    <input type="search" />
+
+    <!-- <h4>Chapter: 08 - Extra Markup</h4> -->
+    <!-- <h4>Chapter: 09 - Audio & Video</h4> -->
+  </body>
+</html>
